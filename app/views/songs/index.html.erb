@@ -1,5 +1,5 @@
 <h1>My Songs</h1>
 
-<%= @song.each do |s| %>
-  <P><%= s.name %></P>
+<% @songs.each do |song| %>
+	<p><%= song.name %></p>
 <% end %>
