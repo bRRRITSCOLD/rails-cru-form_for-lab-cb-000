@@ -1,7 +1,8 @@
-class CreateGenres < ActiveRecord::Migration
+class CreateArtists < ActiveRecord::Migration
   def change
-    create_table :genres do |t|
+    create_table :artists do |t|
       t.string :name
+      t.text :bio
 
       t.timestamps null: false
     end
